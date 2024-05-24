@@ -1,0 +1,218 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.custom-features {
+    @apply bg-white; // Cor de fundo branco
+    @apply p-8; // Padding para dar espaço ao redor do conteúdo
+  
+    .custom-container {
+      @apply max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4; // Grid layout responsivo
+  
+      .custom-feat {
+        @apply flex flex-col items-center text-center p-4; // Alinhamento e espaçamento
+        @apply shadow-lg rounded-lg; // Sombra e bordas arredondadas
+  
+        h3 {
+          @apply text-xl font-semibold my-2; // Estilo para o título
+        }
+  
+        p {
+          @apply text-gray-600; // Cor de texto mais suave para o parágrafo
+        }
+  
+        i {
+          @apply text-blue-500; // Cor ícone
+        }
+  
+        a {
+          @apply mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded; // Botão estilo link
+          @apply hover:bg-blue-600 transition duration-300; // Efeito hover
+        }
+      }
+    }
+  }  
+
+  .portfoliosass {
+    @apply bg-white p-6;
+  
+    .containersass {
+      @apply max-w-7xl mx-auto;
+  
+      .special-headingsass {
+        @apply text-3xl font-bold text-gray-800 mb-4;
+      }
+  
+      p {
+        @apply text-base text-gray-600;
+      }
+  
+      .portfolio-contentsass {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+  
+        .cardsass {
+            @apply bg-gray-50 border border-gray-200 rounded-lg overflow-hidden shadow-lg;
+            min-height: 400px; // Definir uma altura mínima para o card
+          
+            img {
+              @apply w-full object-cover;
+            }
+          
+          
+  
+          .infosass {
+            @apply p-4;
+  
+            h3 {
+              @apply text-xl font-semibold text-gray-900;
+            }
+  
+            .texto-feedbacksass {
+              @apply text-sm text-gray-700 mt-2;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about {
+    background-color: #fff; // Fundo branco
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra sutil
+  
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+  
+      .special-heading {
+        color: #2a4365; // Cor escura para o título
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center; // Centraliza o título
+      }
+  
+      .about-content {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center; // Alinha verticalmente a imagem e o texto
+  
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+  
+        .image {
+          flex: 1;
+          img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; // Borda arredondada na imagem
+          }
+        }
+  
+        .text {
+          flex: 2;
+          font-size: 1rem;
+          line-height: 1.6; // Espaçamento entre linhas para melhor legibilidade
+  
+          p {
+            margin-bottom: 1rem;
+          }
+  
+          hr {
+            margin: 1rem 0;
+            border: none;
+            height: 1px;
+            background-color: #cbd5e0; // Linha divisória suave
+          }
+        }
+      }
+    }
+  }
+
+  .services {
+    background-color: #fff; // Fundo branco
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra sutil
+  
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+  
+      .special-heading {
+        color: #0056b3; // Azul escuro
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+  
+      p {
+        text-align: center;
+        color: #666;
+        font-size: 1.2rem;
+      }
+  
+      .services-content {
+        display: flex;
+        justify-content: space-around; // Distribui as colunas uniformemente
+        flex-wrap: wrap;
+  
+        .col {
+          flex: 1 1 300px; // Flexibilidade e base mínima
+          margin: 1rem;
+  
+          .srv {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  
+            i {
+              color: #4a90e2; // Cor de destaque para ícones
+              margin-bottom: 0.5rem;
+            }
+  
+            .text {
+              h3 {
+                font-size: 1.3rem;
+                color: #333;
+                margin-bottom: 0.5rem;
+              }
+  
+              p {
+                color: #666;
+                line-height: 1.6;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+  
+        .image-column {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
